@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    font-family: "gilroy";
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+    position: relative;
+}
+#back{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+#back img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: gray; */
+    /* opacity: 0.5; */
+}
+
+#workingarea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    /* background-color: grey; */
+    /* border: 2px solid red; */
+}
+#nav{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav img{
+    height: 50px;
+}
+#nleft, #nright{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+#nav #nleft a, #nav #nright a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    font-family: "gilroy";
+}
+
+#hero{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translate(0, -50%);
+    display: flex;
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: red; */
+    justify-content: space-between;
+    /* margin-top: 45px; */
+}
+#heroleft{
+    min-width: 50%;
+    /* height: 100px; */
+    /* background-color: yellowgreen; */
+}
+#heroleft .elem{
+    position: relative;
+    height: 9vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+#heroleft button{
+    pointer-events: all;
+    padding: 1.3vw 2.5vw;
+    font-size: 2.8vw;
+    border-radius: 10px;
+    font-family: "kajiro";
+    margin-top: 2.5vw;
+    cursor: pointer;
+}
+#heroleft .elem h1{
+    position: absolute;
+    font-family: "kajiro";
+    color: white;
+    line-height: 0.95;
+    font-size: 10.5vw;
+    top: 100%;
+    left: 0;
+}
+
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+
+#heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 18%;
+    /* height: 100px; */
+    /* background-color: green; */
+    color: white;
+}
+#heroright p{
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+    /* text-align: right; */
+    /* margin-bottom: 40px; */
+}
+#heroright #imagediv{
+    width: 100%;
+    height: 200px;
+    background-image: url(https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fHBvcnRyYWl0fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#heroright p:nth-child(3){
+   /* color: red; */
+   /* margin-top: 2px; */
+   margin-bottom: 80px;
+
+}
