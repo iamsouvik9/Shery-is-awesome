@@ -27,6 +27,11 @@
 //   gooey: true,
 // });
 
+
+
+
+// Shery.imageEffect("#back", {style: 5, debug: true})
+
 Shery.imageEffect("#back", {
   style: 6,
   config: {
